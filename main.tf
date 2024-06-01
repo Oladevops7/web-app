@@ -84,6 +84,7 @@ resource "aws_security_group" "webSg" {
   }
 }
 
+
 # By default, when another AWS account uploads an object to your S3 bucket, that account (the object writer) owns the object. Additionally, the object writer has access to the object, and can grant other users access to it using ACLs. Object ACLs can be used when you need to manage permissions at the object level.
 # we do not need ACL because we are not creating an object
 resource "aws_s3_bucket" "bucket" {
